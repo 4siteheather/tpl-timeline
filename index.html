@@ -65,7 +65,7 @@
 </head>
 <body>
 <h1>TPL Engaging Networks foundational launch</h1>
-<p class="subtitle">Project timeline: March 13 - September 17, 2026 &nbsp;·&nbsp; Last updated: May 29, 2026</p>
+<p class="subtitle">Project timeline: March 13 - September 17, 2026 &nbsp;&middot;&nbsp; Last updated: June 7, 2026</p>
 <div id="tpl">
   <div class="tpl-controls">
     <button class="tpl-btn active" onclick="setView('summary')">Summary view</button>
@@ -96,7 +96,7 @@ var keyDates=[
 {n:"Meeting 3: TPL Design QA",d:"2026-05-15",t:"meeting",g:"design",done:true},
 {n:"Meeting 4: Revised Design Review",d:"2026-05-18",t:"meeting",g:"design",done:true},
 {n:"TPL: Final feedback on designs",d:"2026-05-22",t:"client",g:"design",done:true},
-{n:"\u2605 Design Approval",d:"2026-06-02",t:"milestone",g:"design",done:false},
+{n:"\u2605 Design Approval",d:"2026-06-02",t:"milestone",g:"design",done:true},
 {n:"Meeting 5: Donation Build Review",d:"2026-06-22",t:"meeting",g:"development",done:false},
 {n:"Meeting 6: Pre-Migration Readiness",d:"2026-06-29",t:"meeting",g:"migration",done:false},
 {n:"\u2605 Field Mapping Approval",d:"2026-07-06",t:"milestone",g:"migration",done:false},
@@ -107,12 +107,11 @@ var keyDates=[
 {n:"Meeting 10: Post-Launch Stabilization",d:"2026-08-17",t:"meeting",g:"qa",done:false}
 ];
 var groups=[
-{id:"discovery",name:"Discovery & Implementation Planning",color:"#1D9E75",closed:32,total:41,tasks:[
+{id:"discovery",name:"Discovery & Implementation Planning",color:"#1D9E75",closed:31,total:40,tasks:[
 {n:"Technical Discovery Sessions",s:"2026-03-23",e:"2026-04-17",done:true},
 {n:"Technical Discovery, Strategy (Week 1)",s:"2026-03-23",e:"2026-03-27",done:true},
 {n:"Current System & Data Flow Audit",s:"2026-04-13",e:"2026-04-17",done:true},
 {n:"Technical Implementation & Migration Plan",s:"2026-04-13",e:"2026-04-17",done:true},
-{n:"Email Content for 3 Marketing Automations",s:"2026-03-31",e:"2026-04-10",done:true},
 {n:"Technical Discovery Sessions, Strategy (Week 2)",s:"2026-05-04",e:"2026-05-12",done:true},
 {n:"Luminate to EN Fields and Field Mapping",s:"2026-05-04",e:"2026-05-08",done:true},
 {n:"Technical Implementation & Migration Plan, Sr. Dev",s:"2026-04-13",e:"2026-05-14",done:true},
@@ -129,16 +128,16 @@ var groups=[
 {n:"TPL: Email Template Block List",s:"2026-05-07",e:"2026-05-20",done:true},
 {n:"Meeting Request: Email Marketing Tools Blocks",s:"2026-05-22",e:"2026-05-26",done:true},
 {n:"Luminate Active Pages List Discrepancy",s:"2026-05-07",e:"2026-05-12",done:false},
-{n:"Luminate Origin Source Code Mapping",s:"2026-05-07",e:"2026-05-12",done:false},
-{n:"TPL Interest Codes",s:"2026-05-04",e:"2026-05-15",done:false},
-{n:"SMS Capabilities & Integration (Tatango)",s:"2026-05-18",e:"2026-05-27",done:false},
-{n:"Populate Calculated NSG Values (Microservice + Dashboard)",s:"2026-06-01",e:"2026-06-06",done:false},
-{n:"Tatango Integration",s:"2026-06-15",e:"2026-06-18",done:false},
+{n:"Luminate Origin Source Code Mapping",s:"2026-05-07",e:"2026-06-15",done:false},
+{n:"TPL Interest Codes",s:"2026-05-04",e:"2026-06-09",done:false},
+{n:"Email Content for 3 Marketing Automations",s:"2026-06-01",e:"2026-06-08",done:false},
+{n:"SMS Capabilities & Integration (Tatango) \u2014 waiting for client",s:"2026-05-18",e:"2026-06-16",done:false},
+{n:"Tatango Integration \u2014 waiting for client",s:"2026-06-17",e:"2026-06-18",done:false},
 {n:"Create 3 Example Segments",s:"2026-07-06",e:"2026-07-13",done:false},
 {n:"Email Journey & Subscription Configuration (Strategy)",s:"2026-07-20",e:"2026-07-21",done:false},
 {n:"Email Journey & Subscription Configuration (Dev)",s:"2026-07-20",e:"2026-07-23",done:false}
 ]},
-{id:"design",name:"Design",color:"#D4537E",closed:22,total:28,tasks:[
+{id:"design",name:"Design",color:"#D4537E",closed:27,total:30,tasks:[
 {n:"Before Screenshots of TPL Forms",s:"2026-03-24",e:"2026-03-24",done:true},
 {n:"Design Knowledge Transfer with Vlad",s:"2026-03-26",e:"2026-03-31",done:true},
 {n:"Donation Page Template Mockup Draft",s:"2026-04-06",e:"2026-04-21",done:true},
@@ -147,18 +146,20 @@ var groups=[
 {n:"Feedback on Draft Designs",s:"2026-04-30",e:"2026-05-13",done:true},
 {n:"Design Feedback (Revision 1)",s:"2026-05-12",e:"2026-05-14",done:true},
 {n:"Icon Library",s:"2026-05-12",e:"2026-05-12",done:true},
+{n:"Incorporate Design Feedback (Revision 1)",s:"2026-05-14",e:"2026-05-18",done:true},
+{n:"Design Support During Revisions",s:"2026-05-15",e:"2026-05-18",done:true},
 {n:"Strategy Collaboration During Revision 1 (Week 2)",s:"2026-05-18",e:"2026-05-22",done:true},
 {n:"Final Feedback on All Designs",s:"2026-05-19",e:"2026-05-22",done:true},
-{n:"Design Support During Revisions",s:"2026-05-15",e:"2026-05-18",done:true},
+{n:"Review TPL Comments in Prep for Final Revisions",s:"2026-05-22",e:"2026-05-29",done:true},
+{n:"Design Final Revisions for Approval",s:"2026-05-26",e:"2026-05-27",done:true},
 {n:"Final Design QA",s:"2026-05-26",e:"2026-05-28",done:true},
-{n:"Incorporate Design Feedback (Revision 1)",s:"2026-05-14",e:"2026-05-18",done:false},
-{n:"Review TPL Comments in Prep for Final Revisions",s:"2026-05-22",e:"2026-05-29",done:false},
-{n:"Design Final Revisions for Approval",s:"2026-05-26",e:"2026-05-27",done:false},
-{n:"Design Approval",s:"2026-05-28",e:"2026-06-02",done:false},
-{n:"Prepare Design Assets for Development",s:"2026-06-01",e:"2026-06-03",done:false},
+{n:"Design Approval",s:"2026-05-28",e:"2026-06-02",done:true},
+{n:"Animation Files",s:"2026-06-01",e:"2026-06-02",done:true},
+{n:"Font Files",s:"2026-06-05",e:"2026-06-08",done:false},
+{n:"Prepare Design Assets for Development",s:"2026-06-05",e:"2026-06-08",done:false},
 {n:"After Screenshots of TPL Forms",s:"2026-09-02",e:"2026-09-02",done:false}
 ]},
-{id:"development",name:"Development",color:"#378ADD",closed:15,total:37,tasks:[
+{id:"development",name:"Development",color:"#378ADD",closed:20,total:50,tasks:[
 {n:"EN Account Buildout",s:"2026-03-23",e:"2026-03-26",done:true},
 {n:"ENgrid Repository Setup & Environment Config",s:"2026-04-14",e:"2026-04-16",done:true},
 {n:"TidyContact Address and Phone Setup",s:"2026-04-14",e:"2026-04-16",done:true},
@@ -166,20 +167,32 @@ var groups=[
 {n:"Initial Reference Page Architecture (Scaffolding)",s:"2026-05-04",e:"2026-05-07",done:true},
 {n:"Data Capture Reference Page",s:"2026-05-05",e:"2026-05-05",done:true},
 {n:"Blind Email to Target Reference Page",s:"2026-05-05",e:"2026-05-06",done:true},
-{n:"Donation/eCard/Advocacy Pages Tech Plan",s:"2026-05-26",e:"2026-05-28",done:false},
-{n:"TPL Email Marketing Tools Tech Plan",s:"2026-05-28",e:"2026-06-01",done:false},
-{n:"Email Marketing Tools Tech Plan, Review with Bryan",s:"2026-06-01",e:"2026-06-02",done:false},
-{n:"Estimate TPL Donation Page Subtasks",s:"2026-06-01",e:"2026-06-01",done:false},
-{n:"Strategy for eCard Reference Page",s:"2026-05-18",e:"2026-06-01",done:false},
-{n:"Create Contracting Task for TidyContact",s:"2026-05-28",e:"2026-06-03",done:false},
+{n:"Strategy for eCard Reference Page",s:"2026-05-18",e:"2026-06-02",done:true},
+{n:"Donation/eCard/Advocacy Pages Tech Plan",s:"2026-05-26",e:"2026-06-03",done:true},
+{n:"Email Marketing Tools Tech Plan, Review with Bryan",s:"2026-06-01",e:"2026-06-02",done:true},
+{n:"Estimate TPL Donation Page Subtasks",s:"2026-06-01",e:"2026-06-04",done:true},
 {n:"Build Branded Email Templates (Marketing Tools)",s:"2026-06-01",e:"2026-06-25",done:false},
-{n:"Develop Email in MJML",s:"2026-06-08",e:"2026-06-11",done:false},
+{n:"Create Contracting Task for TidyContact",s:"2026-06-05",e:"2026-06-08",done:false},
+{n:"TPL Email Marketing Tools Tech Plan",s:"2026-06-05",e:"2026-06-08",done:false},
+{n:"Create Page Template & New Donation Page",s:"2026-06-08",e:"2026-06-11",done:false},
+{n:"Donation Page: Content & Form Fields",s:"2026-06-08",e:"2026-06-12",done:false},
+{n:"Donation Page: Header & Footer",s:"2026-06-08",e:"2026-06-12",done:false},
+{n:"Donation Page: Progress Bar",s:"2026-06-08",e:"2026-06-12",done:false},
+{n:"Donation Page: Other Ways to Give Block",s:"2026-06-08",e:"2026-06-12",done:false},
+{n:"Donation Page: Frequency & Amounts",s:"2026-06-08",e:"2026-06-12",done:false},
+{n:"Donation Page: Suggested Amount Feature",s:"2026-06-08",e:"2026-06-12",done:false},
+{n:"Donation Page: Payment Type Buttons",s:"2026-06-08",e:"2026-06-12",done:false},
 {n:"Build Branded Donation Reference Page",s:"2026-06-08",e:"2026-06-16",done:false},
-{n:"Build Branded Donation Reference Page, Dev Support",s:"2026-06-08",e:"2026-06-18",done:false},
+{n:"Donation Dev Support (Week 1)",s:"2026-06-09",e:"2026-06-11",done:false},
+{n:"Develop Email in MJML",s:"2026-06-09",e:"2026-06-11",done:false},
+{n:"Create 7 Simple Blocks in EN",s:"2026-06-09",e:"2026-06-11",done:false},
 {n:"Additional Donation Reference Page Buildout",s:"2026-06-08",e:"2026-06-19",done:true},
-{n:"Create 7 Simple Blocks in EN",s:"2026-06-08",e:"2026-06-11",done:false},
 {n:"Strategy for Subscription Reference Page",s:"2026-06-15",e:"2026-06-15",done:false},
+{n:"Donation Page: Match Mockups",s:"2026-06-15",e:"2026-06-17",done:false},
+{n:"Donation Page: Cross-Browser & Mobile",s:"2026-06-15",e:"2026-06-17",done:false},
 {n:"Create Marketing Tools Template in EN",s:"2026-06-15",e:"2026-06-18",done:false},
+{n:"Donation Page: Thank You Page",s:"2026-06-15",e:"2026-06-18",done:false},
+{n:"Donation Dev Support (Week 2)",s:"2026-06-15",e:"2026-06-18",done:false},
 {n:"Develop Branded Advocacy Reference Pages",s:"2026-06-17",e:"2026-06-18",done:false},
 {n:"Branded Advocacy Reference Pages, Strategy",s:"2026-06-15",e:"2026-06-25",done:false},
 {n:"Develop Branded eCard Reference Page",s:"2026-06-22",e:"2026-06-25",done:false},
@@ -189,20 +202,22 @@ var groups=[
 {n:"Subscription Management Page Configuration",s:"2026-06-29",e:"2026-07-02",done:false},
 {n:"Supporter Hub Configuration",s:"2026-06-29",e:"2026-07-02",done:false}
 ]},
-{id:"migration",name:"Migration",color:"#EF9F27",closed:3,total:27,tasks:[
+{id:"migration",name:"Migration",color:"#EF9F27",closed:6,total:29,tasks:[
 {n:"Integration Partner",s:"2026-04-03",e:"2026-04-03",done:true},
 {n:"Supporter Data Migration Preparation (Strategy)",s:"2026-05-04",e:"2026-05-21",done:true},
 {n:"Advocacy Page Migration Recommendations",s:"2026-05-07",e:"2026-05-12",done:true},
+{n:"Study LO + EN APIs",s:"2026-05-27",e:"2026-05-28",done:true},
+{n:"Map the Export Workflow (LO \u2192 Staging)",s:"2026-06-01",e:"2026-06-02",done:true},
+{n:"Map the Import Workflow (Staging \u2192 EN)",s:"2026-06-02",e:"2026-06-03",done:true},
 {n:"Supporter Data Migration Preparation (Dev)",s:"2026-05-25",e:"2026-06-11",done:false},
-{n:"Study LO + EN APIs",s:"2026-05-27",e:"2026-05-28",done:false},
-{n:"Giving Day Custom Page Scoping",s:"2026-05-07",e:"2026-05-29",done:false},
-{n:"Map the Export Workflow (LO \u2192 Staging)",s:"2026-06-01",e:"2026-06-02",done:false},
-{n:"Map the Import Workflow (Staging \u2192 EN)",s:"2026-06-02",e:"2026-06-03",done:false},
 {n:"LO Action Alerts \u2192 EN Stub Pages",s:"2026-06-08",e:"2026-06-09",done:false},
+{n:"Giving Day Tracking Question",s:"2026-06-05",e:"2026-06-09",done:false},
 {n:"Build Migration Script with Seed Dataset",s:"2026-06-15",e:"2026-06-16",done:false},
+{n:"Ensure SoftTrek Field Mappings Ready",s:"2026-06-15",e:"2026-06-15",done:false},
 {n:"Validate Fake-Data Migration & Iterate",s:"2026-06-16",e:"2026-06-17",done:false},
 {n:"Real-Data Smoke Test (Small Sample)",s:"2026-06-16",e:"2026-06-17",done:false},
-{n:"Ensure SoftTrek Field Mappings Ready",s:"2026-06-15",e:"2026-06-15",done:false},
+{n:"Giving Day Custom Page (Change Order 2)",s:"2026-06-15",e:"2026-06-22",done:false},
+{n:"Giving Day 4Site QA",s:"2026-06-19",e:"2026-06-23",done:false},
 {n:"CRM Integration Advisory & Field Mapping Review",s:"2026-06-29",e:"2026-07-02",done:false},
 {n:"Full-Scale Dress Rehearsal on Sandbox",s:"2026-07-06",e:"2026-07-07",done:false},
 {n:"Supporter Data Import & Validation",s:"2026-07-07",e:"2026-07-09",done:false},
@@ -215,6 +230,7 @@ var groups=[
 {n:"Topper Migration",s:"2026-08-03",e:"2026-08-07",done:false}
 ]},
 {id:"qa",name:"QA, Documentation, Training & Launch",color:"#639922",closed:0,total:32,tasks:[
+{n:"Schedule Training (4 hours) \u2014 waiting for client",s:"2026-06-08",e:"2026-06-11",done:false},
 {n:"GTM & Data Layer Implementation, Dev",s:"2026-07-06",e:"2026-07-07",done:false},
 {n:"4Site Internal QA",s:"2026-07-08",e:"2026-07-08",done:false},
 {n:"Dev Support During QA",s:"2026-07-08",e:"2026-07-16",done:false},
@@ -255,8 +271,7 @@ var icon=k.t==="milestone"?"<span class='tpl-diamond' style='background:#E24B4A;
 var rowCls=k.done?" class='tpl-done'":"";
 html+="<tr"+rowCls+"><td class='tpl-task-name "+cls+"' title='"+k.n+"'>"+icon+(k.done?"&#10003; ":"")+k.n+"</td>";
 html+="<td class='tpl-date'>"+fmt(k.d)+"</td>";
-if(showTL)html+="<td></td>";
-html+="</tr>"});
+if(showTL)html+="<td></td>";html+="</tr>"});
 groups.forEach(function(g){
 var isExp=!!expandedGroups[g.id];
 var related=(currentView==="summary")?keyDates.filter(function(k){return k.g===g.id&&!k.done}):keyDates.filter(function(k){return k.g===g.id});
@@ -267,22 +282,19 @@ html+=g.name+" <span style='font-weight:400;font-size:11px;color:var(--color-tex
 html+=progressBar(g.closed,g.total,g.color);
 html+=" <button class='tpl-expand' onclick='toggleGroup(\""+g.id+"\")'>"+(isExp?"\u25B2 collapse":"\u25BC expand")+"</button>";
 html+="</td></tr>";
-if(isExp){
-var allItems=[];
+if(isExp){var allItems=[];
 visibleTasks.forEach(function(t){allItems.push({type:"task",data:t,sortDate:t.s||t.e})});
 related.forEach(function(k){allItems.push({type:"key",data:k,sortDate:k.d})});
 allItems.sort(function(a,b){return a.sortDate<b.sortDate?-1:a.sortDate>b.sortDate?1:0});
 allItems.forEach(function(item){
-if(item.type==="key"){
-var k=item.data;
+if(item.type==="key"){var k=item.data;
 var cls=k.t==="milestone"?"tpl-type-milestone":k.t==="client"?"tpl-type-client":"tpl-type-meeting";
 var icon=k.t==="milestone"?"<span class='tpl-diamond' style='background:#E24B4A;'></span>":k.t==="client"?"<span class='tpl-circle' style='background:#D85A30;'></span>":"<span class='tpl-diamond' style='background:#888780;'></span>";
 var rowCls=k.done?" class='tpl-done'":"";
 html+="<tr"+rowCls+"><td class='tpl-task-name "+cls+"' title='"+k.n+"'>"+icon+(k.done?"&#10003; ":"")+k.n+"</td>";
 html+="<td class='tpl-date'>"+fmt(k.d)+"</td>";
 if(showTL){var kPct=pct(toD(k.d));var shape=k.t==="milestone"?"<div style='position:absolute;left:"+kPct+"%;top:50%;transform:translate(-50%,-50%) rotate(45deg);width:10px;height:10px;background:#E24B4A;'></div>":k.t==="client"?"<div style='position:absolute;left:"+kPct+"%;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;background:#D85A30;border-radius:50%;'></div>":"<div style='position:absolute;left:"+kPct+"%;top:50%;transform:translate(-50%,-50%) rotate(45deg);width:8px;height:8px;background:#888780;'></div>";html+=barTrack(shape)}
-html+="</tr>"}else{
-var t=item.data;var lp=pct(toD(t.s));var wp=Math.max(pct(toD(t.e))-lp,0.6);var isSingle=t.s===t.e;
+html+="</tr>"}else{var t=item.data;var lp=pct(toD(t.s));var wp=Math.max(pct(toD(t.e))-lp,0.6);var isSingle=t.s===t.e;
 var barColor=t.done?"var(--color-text-secondary)":g.color;var rowCls=t.done?" class='tpl-done'":"";
 html+="<tr"+rowCls+"><td class='tpl-task-name' title='"+t.n+"'>"+(t.done?"&#10003; ":"")+t.n+"</td>";
 html+="<td class='tpl-date'>"+fmtR(t.s,t.e)+"</td>";
