@@ -65,7 +65,7 @@
 </head>
 <body>
 <h1>TPL Engaging Networks foundational launch</h1>
-<p class="subtitle">Project timeline: March 13 - September 17, 2026 &nbsp;&middot;&nbsp; Last updated: June 28, 2026</p>
+<p class="subtitle">Project timeline: March 13 - September 17, 2026 &nbsp;&middot;&nbsp; Last updated: July 5, 2026</p>
 <div id="tpl">
   <div class="tpl-controls">
     <button class="tpl-btn active" onclick="setView('summary')">Summary view</button>
@@ -96,16 +96,16 @@ var keyDates=[
 {n:"TPL: Final feedback on designs",d:"2026-05-22",t:"client",g:"design",done:true},
 {n:"\u2605 Design Approval",d:"2026-06-02",t:"milestone",g:"design",done:true},
 {n:"Meeting 5: Donation Build Review",d:"2026-06-22",t:"meeting",g:"development",done:true},
-{n:"Meeting 6: Pre-Migration Readiness",d:"2026-06-29",t:"meeting",g:"migration",done:false},
+{n:"Meeting 6: Pre-Migration Readiness",d:"2026-06-29",t:"meeting",g:"migration",done:true},
+{n:"Meeting 7: Migration Kickoff",d:"2026-07-13",t:"meeting",g:"migration",done:false},
 {n:"\u2605 Field Mapping Approval",d:"2026-07-16",t:"milestone",g:"migration",done:false},
-{n:"Meeting 7: Migration Kickoff",d:"2026-07-06",t:"meeting",g:"migration",done:false},
 {n:"Meeting 8: Training",d:"2026-08-11",t:"meeting",g:"qa",done:false},
 {n:"\u2605 Launch Approval",d:"2026-08-24",t:"milestone",g:"qa",done:false},
 {n:"Meeting 9: Pre-Launch Check-in",d:"2026-08-24",t:"meeting",g:"qa",done:false},
 {n:"\u2605 Launch",d:"2026-08-25",t:"milestone",g:"qa",done:false}
 ];
 var groups=[
-{id:"discovery",name:"Discovery & Implementation Planning",color:"#1D9E75",closed:35,total:42,tasks:[
+{id:"discovery",name:"Discovery & Implementation Planning",color:"#1D9E75",closed:36,total:42,tasks:[
 {n:"Technical Discovery Sessions",s:"2026-03-23",e:"2026-04-17",done:true},
 {n:"Technical Discovery, Strategy (Week 1)",s:"2026-03-23",e:"2026-03-27",done:true},
 {n:"Current System & Data Flow Audit",s:"2026-04-13",e:"2026-04-17",done:true},
@@ -129,9 +129,9 @@ var groups=[
 {n:"TPL Interest Codes",s:"2026-05-04",e:"2026-06-09",done:true},
 {n:"Email Content for 3 Marketing Automations",s:"2026-06-01",e:"2026-06-11",done:true},
 {n:"MVP Review Meeting & Follow-ups",s:"2026-06-15",e:"2026-06-18",done:true},
+{n:"Luminate Active Pages List Discrepancy",s:"2026-05-07",e:"2026-07-11",done:true},
 {n:"Luminate Origin Source Code Mapping",s:"2026-05-07",e:"2026-06-15",done:false},
 {n:"Answer TPL Tatango Questions",s:"2026-06-30",e:"2026-06-30",done:false},
-{n:"Luminate Active Pages List \u2014 waiting for client",s:"2026-05-07",e:"2026-07-11",done:false},
 {n:"Tatango Integration",s:"2026-07-06",e:"2026-07-09",done:false},
 {n:"Create 2 Example Segments",s:"2026-07-06",e:"2026-07-13",done:false},
 {n:"Email Journey & Subscription Configuration (Strategy)",s:"2026-07-20",e:"2026-07-21",done:false},
@@ -198,15 +198,15 @@ var groups=[
 {n:"Create 6 Complex Blocks in EN",s:"2026-06-18",e:"2026-06-24",done:true},
 {n:"Donation Receipt Template",s:"2026-06-29",e:"2026-07-02",done:true},
 {n:"Marketing Tools Change Order (Approved)",s:"2026-06-18",e:"2026-06-25",done:true},
-{n:"Create Marketing Tools Template in EN",s:"2026-06-24",e:"2026-06-26",done:false},
-{n:"Build Branded Email Templates (Marketing Tools)",s:"2026-06-01",e:"2026-07-02",done:false},
-{n:"TidyContact Email, Address & Phone \u2014 waiting for client",s:"2026-06-08",e:"2026-07-06",done:false},
 {n:"Subscription Management Page Configuration",s:"2026-06-29",e:"2026-07-02",done:false},
-{n:"Supporter Hub Configuration",s:"2026-06-29",e:"2026-07-02",done:false},
-{n:"Create All Blocks Reference Email in EN",s:"2026-06-29",e:"2026-07-02",done:false},
-{n:"Auto Responders Setup",s:"2026-07-01",e:"2026-07-02",done:false}
+{n:"Create Marketing Tools Template in EN",s:"2026-07-01",e:"2026-07-02",done:false},
+{n:"Build Branded Email Templates (Marketing Tools)",s:"2026-06-01",e:"2026-07-02",done:false},
+{n:"Create All Blocks Reference Email in EN",s:"2026-07-01",e:"2026-07-02",done:false},
+{n:"Auto Responders Setup",s:"2026-07-01",e:"2026-07-02",done:false},
+{n:"TidyContact Email, Address & Phone \u2014 waiting for client",s:"2026-06-08",e:"2026-07-06",done:false},
+{n:"Supporter Hub Configuration",s:"2026-06-29",e:"2026-07-02",done:false}
 ]},
-{id:"migration",name:"Migration",color:"#EF9F27",closed:11,total:30,tasks:[
+{id:"migration",name:"Migration",color:"#EF9F27",closed:14,total:33,tasks:[
 {n:"Integration Partner",s:"2026-04-03",e:"2026-04-03",done:true},
 {n:"Supporter Data Migration Preparation (Strategy)",s:"2026-05-04",e:"2026-05-21",done:true},
 {n:"Advocacy Page Migration Recommendations",s:"2026-05-07",e:"2026-05-12",done:true},
@@ -217,41 +217,44 @@ var groups=[
 {n:"LO Action Alerts \u2192 EN Stub Pages",s:"2026-06-15",e:"2026-06-16",done:true},
 {n:"Build Migration Script with Seed Dataset",s:"2026-06-15",e:"2026-06-16",done:true},
 {n:"Validate Fake-Data Migration & Iterate",s:"2026-06-16",e:"2026-06-17",done:true},
+{n:"Real-Data Smoke Test (Small Sample)",s:"2026-06-26",e:"2026-06-26",done:true},
+{n:"Donor Data Migration",s:"2026-07-01",e:"2026-07-02",done:true},
+{n:"Migration Data Files",s:"2026-07-01",e:"2026-07-02",done:true},
 {n:"Supporter Data Migration Preparation (Dev)",s:"2026-05-25",e:"2026-06-26",done:false},
-{n:"Real-Data Smoke Test (Small Sample)",s:"2026-06-26",e:"2026-06-26",done:false},
+{n:"Flat File Import: Analyze LO Files & Adjust Migration",s:"2026-07-06",e:"2026-07-10",done:false},
 {n:"Full-Scale Dress Rehearsal on Sandbox",s:"2026-07-06",e:"2026-07-07",done:false},
 {n:"SoftTrek Field Mappings",s:"2026-07-06",e:"2026-07-10",done:false},
-{n:"Supporter Data Import & Validation",s:"2026-07-07",e:"2026-07-09",done:false},
 {n:"Production Import: Supporters",s:"2026-07-07",e:"2026-07-08",done:false},
+{n:"Supporter Data Import & Validation",s:"2026-07-13",e:"2026-07-16",done:false},
 {n:"Production Import: Stub Pages & Advocacy History",s:"2026-07-12",e:"2026-07-13",done:false},
-{n:"CRM Integration Advisory & Field Mapping Review",s:"2026-07-13",e:"2026-07-16",done:false},
 {n:"Automated Validation Report",s:"2026-07-13",e:"2026-07-14",done:false},
 {n:"Giving Day Custom Page (CO2) \u2014 waiting for client",s:"2026-07-13",e:"2026-07-16",done:false},
 {n:"Manual Sample Review & Defect Triage",s:"2026-07-14",e:"2026-07-15",done:false},
 {n:"Migration Sample Approval",s:"2026-07-15",e:"2026-07-17",done:false},
 {n:"Giving Day 4Site QA",s:"2026-07-15",e:"2026-07-17",done:false},
-{n:"Integration QA (CRM & Data Warehouse Advisory)",s:"2026-07-13",e:"2026-07-23",done:false},
+{n:"CRM Integration Advisory & Field Mapping Review",s:"2026-07-20",e:"2026-07-23",done:false},
+{n:"Integration QA (CRM & Data Warehouse Advisory)",s:"2026-07-20",e:"2026-07-23",done:false},
 {n:"Topper Migration",s:"2026-08-10",e:"2026-08-14",done:false}
 ]},
-{id:"qa",name:"QA, Documentation, Training & Launch",color:"#639922",closed:3,total:40,tasks:[
-{n:"Schedule Training \u2014 waiting for client",s:"2026-06-30",e:"2026-06-30",done:false},
+{id:"qa",name:"QA, Documentation, Training & Launch",color:"#639922",closed:7,total:41,tasks:[
+{n:"Schedule Training (4 hours)",s:"2026-06-30",e:"2026-06-30",done:true},
+{n:"Site QA, Design (EN Pages)",s:"2026-06-29",e:"2026-07-06",done:true},
 {n:"Documentation",s:"2026-07-06",e:"2026-07-09",done:false},
-{n:"Site QA, Design (EN Pages)",s:"2026-07-06",e:"2026-07-06",done:false},
 {n:"Site QA, Design (Marketing Tools)",s:"2026-07-06",e:"2026-07-06",done:false},
-{n:"EN Pages Improvements from 4Site QA",s:"2026-07-07",e:"2026-07-15",done:false},
-{n:"4Site Internal QA (Pages)",s:"2026-07-08",e:"2026-07-08",done:false},
-{n:"Dev QA on EN Pages",s:"2026-07-08",e:"2026-07-10",done:false},
+{n:"EN Pages Improvements from 4Site QA",s:"2026-07-06",e:"2026-07-15",done:false},
+{n:"4Site Internal QA (Pages)",s:"2026-07-07",e:"2026-07-08",done:false},
+{n:"Dev QA on EN Pages",s:"2026-07-07",e:"2026-07-10",done:false},
 {n:"Dev QA on Marketing Tools",s:"2026-07-08",e:"2026-07-08",done:false},
-{n:"Dev Support During QA",s:"2026-07-08",e:"2026-07-16",done:false},
+{n:"Dev Support During QA",s:"2026-07-08",e:"2026-07-16",done:true},
 {n:"Improvements from 4Site QA",s:"2026-07-08",e:"2026-07-16",done:false},
-{n:"Add URLs to BugHerd",s:"2026-08-10",e:"2026-08-10",done:false},
 {n:"GTM & Data Layer Implementation",s:"2026-07-13",e:"2026-07-16",done:false},
 {n:"Marketing Tools Improvements (4Site QA)",s:"2026-07-14",e:"2026-07-16",done:false},
 {n:"Marketing Tools Documentation",s:"2026-07-14",e:"2026-07-16",done:false},
+{n:"Documentation, Sr. Dev Support",s:"2026-07-13",e:"2026-07-22",done:false},
 {n:"Embedded Signup Forms via WP Promo Plugin",s:"2026-07-15",e:"2026-07-15",done:false},
-{n:"Documentation, Sr. Dev Support",s:"2026-07-20",e:"2026-07-22",done:false},
-{n:"Training Preparation",s:"2026-07-22",e:"2026-07-23",done:false},
-{n:"Marketing Tools Client Training Prep",s:"2026-07-22",e:"2026-07-23",done:false},
+{n:"Training Preparation",s:"2026-07-21",e:"2026-07-23",done:false},
+{n:"Marketing Tools Client Training Prep",s:"2026-07-21",e:"2026-07-23",done:false},
+{n:"Add URLs to BugHerd",s:"2026-08-10",e:"2026-08-10",done:false},
 {n:"Training with Sydney & Bryan",s:"2026-08-11",e:"2026-08-12",done:false},
 {n:"Client QA Period",s:"2026-08-13",e:"2026-08-18",done:false},
 {n:"Bug Fix Sprint (Client QA)",s:"2026-08-19",e:"2026-08-21",done:false},
