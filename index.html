@@ -13,18 +13,15 @@
 </head>
 <body>
 <h1>TPL Engaging Networks foundational launch</h1>
-<p class="subtitle">Project timeline: March 13 - September 17, 2026 &nbsp;&middot;&nbsp; Last updated: August 21, 2026</p>
+<p class="subtitle">Project timeline: March 13 - September 17, 2026 &nbsp;&middot;&nbsp; Last updated: September 4, 2026</p>
 <div id="tpl">
   <div class="tpl-controls"><button class="tpl-btn active" onclick="setView('summary')">Summary view</button><button class="tpl-btn" onclick="setView('full')">Full view</button></div>
   <div class="tpl-legend">
     <span><span class="tpl-diamond" style="background:#FF800B;"></span> Approval milestone</span>
     <span><span class="tpl-circle" style="background:#D85A30;"></span> Client due date</span>
     <span><span class="tpl-diamond" style="background:#888780;"></span> Check-in meeting</span>
-    <span><span style="display:inline-block;width:14px;height:8px;background:#1D9E75;border-radius:2px;vertical-align:middle;margin-right:4px;"></span>Discovery</span>
-    <span><span style="display:inline-block;width:14px;height:8px;background:#D4537E;border-radius:2px;vertical-align:middle;margin-right:4px;"></span>Design</span>
-    <span><span style="display:inline-block;width:14px;height:8px;background:#378ADD;border-radius:2px;vertical-align:middle;margin-right:4px;"></span>Development</span>
-    <span><span style="display:inline-block;width:14px;height:8px;background:#EF9F27;border-radius:2px;vertical-align:middle;margin-right:4px;"></span>Migration</span>
     <span><span style="display:inline-block;width:14px;height:8px;background:#639922;border-radius:2px;vertical-align:middle;margin-right:4px;"></span>QA, Training & Launch</span>
+    <span><span style="display:inline-block;width:14px;height:8px;background:#2BA4B5;border-radius:2px;vertical-align:middle;margin-right:4px;"></span>Adhoc Support</span>
     <span style="margin-left:6px;opacity:0.45;"><span style="display:inline-block;width:14px;height:8px;background:var(--color-text-secondary);border-radius:2px;vertical-align:middle;margin-right:4px;"></span>Completed</span>
   </div>
   <div style="overflow-x:auto;"><table class="tpl-table" id="tpl-table"></table></div>
@@ -35,10 +32,6 @@ function toD(s){return new Date(s+"T00:00:00")}function pct(d){return((d-project
 var keyDates=[
 {n:"Meeting 1: Discovery & Architecture Review",d:"2026-04-20",t:"meeting",g:"discovery",done:true},
 {n:"Meeting 2: Draft Designs",d:"2026-04-30",t:"meeting",g:"design",done:true},
-{n:"TPL: Feedback on draft designs",d:"2026-05-13",t:"client",g:"design",done:true},
-{n:"Meeting 3: TPL Design QA",d:"2026-05-15",t:"meeting",g:"design",done:true},
-{n:"Meeting 4: Revised Design Review",d:"2026-05-18",t:"meeting",g:"design",done:true},
-{n:"TPL: Final feedback on designs",d:"2026-05-22",t:"client",g:"design",done:true},
 {n:"\u2605 Design Approval",d:"2026-06-02",t:"milestone",g:"design",done:true},
 {n:"Meeting 5: Donation Build Review",d:"2026-06-22",t:"meeting",g:"development",done:true},
 {n:"Meeting 6: Pre-Migration Readiness",d:"2026-06-29",t:"meeting",g:"migration",done:true},
@@ -48,37 +41,24 @@ var keyDates=[
 {n:"Meeting 8: Training",d:"2026-08-11",t:"meeting",g:"qa",done:true},
 {n:"TPL: Client QA Period",d:"2026-08-13",t:"client",g:"qa",done:true},
 {n:"Meeting: TPL QA Triage",d:"2026-08-14",t:"meeting",g:"qa",done:true},
-{n:"TPL: Topper File Due",d:"2026-08-17",t:"client",g:"migration",done:true},
 {n:"High Priority Page Improvements from TPL QA",d:"2026-08-17",t:"client",g:"qa",done:true},
-{n:"EN Open Office Hours (Optional)",d:"2026-08-17",t:"meeting",g:"qa",done:true},
-{n:"EN Open Office Hours (Optional)",d:"2026-08-21",t:"meeting",g:"qa",done:true},
-{n:"\u2605 Launch Approval",d:"2026-08-24",t:"milestone",g:"qa",done:false},
-{n:"Meeting 9: Pre-Launch Check-in",d:"2026-08-24",t:"meeting",g:"qa",done:false},
-{n:"\u2605 Launch",d:"2026-08-25",t:"milestone",g:"qa",done:false},
-{n:"Meeting 10: Post-Launch (Final) Check-in",d:"2026-09-02",t:"meeting",g:"qa",done:false}
+{n:"\u2605 Launch Approval",d:"2026-09-04",t:"milestone",g:"qa",done:false},
+{n:"\u2605 Launch",d:"2026-09-14",t:"milestone",g:"qa",done:false}
 ];
 var groups=[
-{id:"discovery",name:"Discovery & Implementation Planning",color:"#1D9E75",closed:44,total:44,tasks:[]},
-{id:"design",name:"Design",color:"#D4537E",closed:29,total:30,tasks:[
-{n:"After Screenshots of TPL Forms",s:"2026-09-01",e:"2026-09-01",done:false}
+{id:"qa",name:"QA, Documentation, Training & Launch",color:"#639922",closed:50,total:58,tasks:[
+{n:"Pre-Launch QA",s:"2026-09-04",e:"2026-09-09",done:false},
+{n:"Launch Approval",s:"2026-09-04",e:"2026-09-04",done:false},
+{n:"Pages Launch \u2014 waiting for client",s:"2026-09-14",e:"2026-09-14",done:false},
+{n:"Marketing Tools Launch \u2014 waiting for client",s:"2026-09-14",e:"2026-09-14",done:false},
+{n:"Post-Launch Support",s:"2026-09-14",e:"2026-09-17",done:false},
+{n:"Move Bugherd Icebox to Productive Retainer Ideas",s:"2026-09-14",e:"2026-10-01",done:false}
 ]},
-{id:"development",name:"Development",color:"#378ADD",closed:54,total:55,tasks:[
-{n:"TidyContact Email, Address & Phone \u2014 waiting for client",s:"2026-06-08",e:"2026-08-25",done:false}
-]},
-{id:"migration",name:"Migration",color:"#EF9F27",closed:44,total:45,tasks:[
-{n:"Topper Migration",s:"2026-08-17",e:"2026-08-21",done:false}
-]},
-{id:"qa",name:"QA, Documentation, Training & Launch",color:"#639922",closed:39,total:55,tasks:[
-{n:"Marketing Tools Top Priority QA Fixes",s:"2026-08-18",e:"2026-08-21",done:false},
-{n:"Improvements from TPL QA",s:"2026-08-21",e:"2026-08-24",done:false},
-{n:"Launch Approval",s:"2026-08-24",e:"2026-08-24",done:false},
-{n:"Launch & Post-Launch Support",s:"2026-08-25",e:"2026-08-27",done:false},
-{n:"Embedded Email Sign Up Forms \u2014 waiting for client",s:"2026-08-25",e:"2026-08-25",done:false},
-{n:"Pull Documentation from Bugherd Icebox",s:"2026-08-25",e:"2026-08-28",done:false},
-{n:"Post-Launch Support (Week 1)",s:"2026-08-25",e:"2026-08-27",done:false},
-{n:"Post-Launch Support (Week 2)",s:"2026-09-02",e:"2026-09-04",done:false},
-{n:"Post-Launch Support (Week 3)",s:"2026-09-02",e:"2026-09-09",done:false},
-{n:"Move Bugherd Icebox to Productive Retainer Ideas",s:"2026-09-01",e:"2026-09-04",done:false}
+{id:"adhoc",name:"Adhoc Support",color:"#2BA4B5",closed:0,total:4,tasks:[
+{n:"Opt-Out Groups on User Profiles",s:"2026-09-04",e:"2026-09-09",done:false},
+{n:"Scope: Update Sandbox EN to Match Live EN",s:"2026-09-14",e:"2026-09-14",done:false},
+{n:"TidyContact Address & Phone \u2014 waiting for client",s:"2026-09-14",e:"2026-09-14",done:false},
+{n:"Target & Suppress Based on Preferences (Discovery)",s:"2026-09-09",e:"2026-09-16",done:false}
 ]}
 ];
 var milestonePcts=keyDates.filter(function(k){return k.t==="milestone"}).map(function(k){return pct(toD(k.d))});
